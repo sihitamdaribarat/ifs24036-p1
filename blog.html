@@ -1,61 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Programming Blog</title>
 </head>
 <body>
-<nav>
-    <a href="index.html">Home</a> | 
-    <a href="blog.html">Blog</a> | 
-    <a href="blog-detail.html">Detail Blog</a> | 
-    <a href="form.html">Form</a> | 
-    <a href="cv.html">CV</a>
-</nav>
 
-<hr> <!-- Garis pemisah agar rapi -->
-    <h3>Programming</h3>
-    <p>The magic behind computers.</p>
+    <!-- Landmark Navigasi -->
+    <nav aria-label="Navigasi Utama">
+        <a href="index.html">Home</a> | 
+        <a href="blog.html">Blog</a> | 
+        <a href="blog-detail.html">Detail Blog</a> | 
+        <a href="form.html">Form</a> | 
+        <a href="cv.html">CV</a>
+    </nav>
+
     <hr>
 
-    <!-- Item Blog 1 -->
-    <table border="1" width="100%">
-        <tr>
-            <td width="32"><img src="Image/profile.jpeg" width="32" height="32" alt="Profile"></td>
-            <td>
+    <!-- Landmark Konten Utama -->
+    <main>
+        <header>
+            <h1>Programming</h1>
+            <p>The magic behind computers.</p>
+        </header>
+        <hr>
+
+        <!-- Artikel Blog 1 -->
+        <article style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <img src="Image/profile.jpeg" width="32" height="32" alt="Profil aimodels-fyi">
+            <div>
                 <p><strong>aimodels-fyi</strong><br /><span>Jun 1</span></p>
-                <h3><a href="blog-detail.html">A beginner's guide to the Ltx-Video-0.9.7 model by Lightricks on Replicate</a></h3>
+                <h2><a href="blog-detail.html">A beginner's guide to the Ltx-Video-0.9.7 model by Lightricks on Replicate</a></h2>
                 <p><span>#coding</span>&nbsp;&nbsp;<span>#ai</span></p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </article>
 
-    <br />
-
-    <!-- Item Blog 2 -->
-    <table border="1" width="100%">
-        <tr>
-            <td width="32"><img src="Image/profile.jpeg" width="32" height="32" alt="Profile"></td>
-            <td>
+        <!-- Artikel Blog 2 -->
+        <article style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <img src="Image/profile.jpeg" width="32" height="32" alt="Profil Ali nazari">
+            <div>
                 <p><strong>Ali nazari</strong><br /><span>May 31</span></p>
-                <h3><a href="blog-detail.html">Securing Redis with ACLs and Integrating Redis Insight in Docker</a></h3>
+                <h2><a href="blog-detail.html">Securing Redis with ACLs and Integrating Redis Insight in Docker</a></h2>
                 <p><span>#docker</span>&nbsp;&nbsp;<span>#webdev</span></p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </article>
 
-    <br />
-
-    <!-- Item Blog 3 -->
-    <table border="1" width="100%">
-        <tr>
-            <td width="32"><img src="Image/profile.jpeg" width="32" height="32" alt="Profile"></td>
-            <td>
+        <!-- Artikel Blog 3 -->
+        <article style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <img src="Image/profile.jpeg" width="32" height="32" alt="Profil Vishnu Satheesh">
+            <div>
                 <p><strong>Vishnu Satheesh</strong><br /><span>May 31</span></p>
-                <h3><a href="blog-detail.html">How to Deploy a Web Application Using Docker and NGINX on Your Own Server</a></h3>
+                <h2><a href="blog-detail.html">How to Deploy a Web Application Using Docker and NGINX on Your Own Server</a></h2>
                 <p><span>#webdev</span>&nbsp;&nbsp;<span>#devops</span></p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </article>
+    </main>
 
 </body>
 </html>

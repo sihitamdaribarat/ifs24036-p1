@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Blog Detail</title>
 </head>
 <body>
-<nav>
-    <a href="index.html">Home</a> | 
-    <a href="blog.html">Blog</a> | 
-    <a href="blog-detail.html">Detail Blog</a> | 
-    <a href="form.html">Form</a> | 
-    <a href="cv.html">CV</a>
-</nav>
 
-<hr> <!-- Garis pemisah agar rapi -->
-    <!-- Gambar Cover -->
-    <img src="Image/background.jpg" width="100%" alt="Blog Cover">
-
-    <!-- Informasi Author -->
-    <div>
-        <img src="Image/profile.jpeg" width="32" height="32" alt="Profile">
-        <span><strong>Vishnu Satheesh</strong></span><br />
-        <span>Posted on May 31</span>
-    </div>
-
-    <!-- Judul Blog -->
-    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
-    
-    <p>#webdev #devops</p>
-    
-    <hr>
-
-    <!-- Konten Blog -->
-    <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
-    
-    <h3>Step 1 : Setup docker</h3>
-    <p>First, let's set up Docker. I'm using a simple React app as an example...</p>
-    
-    <h3>Step 2 : Build and Run the Docker Container</h3>
-    <p>Once you've created your Dockerfile, the next step is to build your Docker image...</p>
-    
-    <h3>Conclusion</h3>
-    <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first...</p>
+    <!-- Landmark Navigasi -->
+    <nav aria-label="Navigasi Utama">
+        <a href="index.html">Home</a> | 
+        <a href="blog.html">Blog</a> | 
+        <a href="blog-detail.html">Detail Blog</a> | 
+        <a href="form.html">Form</a> | 
+        <a href="cv.html">CV</a>
+    </nav>
 
     <hr>
 
-    <!-- Bagian Komentar -->
-    <h3>Top comments (0)</h3>
-    <div>
-        <img src="Image/profile.jpeg" width="32" height="32" alt="Profile">
-        <textarea rows="3" placeholder="Add to the discussion"></textarea>
-    </div>
+    <!-- Landmark Konten Utama -->
+    <main>
+        <!-- Konten Artikel -->
+        <article>
+            <img src="Image/background.jpg" width="100%" alt="Blog Cover">
+
+            <header>
+                <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+                <div>
+                    <img src="Image/profile.jpeg" width="32" height="32" alt="Foto Profil Vishnu Satheesh">
+                    <span><strong>Vishnu Satheesh</strong></span><br />
+                    <time datetime="2026-05-31">Posted on May 31, 2026</time>
+                </div>
+                <p>Tag: #webdev #devops</p>
+            </header>
+            
+            <hr>
+
+            <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
+            
+            <h2>Step 1 : Setup docker</h2>
+            <p>First, let's set up Docker. I'm using a simple React app as an example...</p>
+            
+            <h2>Step 2 : Build and Run the Docker Container</h2>
+            <p>Once you've created your Dockerfile, the next step is to build your Docker image...</p>
+            
+            <h2>Conclusion</h2>
+            <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first...</p>
+        </article>
+
+        <hr>
+
+        <!-- Bagian Komentar -->
+        <section aria-labelledby="comment-heading">
+            <h2 id="comment-heading">Top comments (0)</h2>
+            <div>
+                <img src="Image/profile.jpeg" width="32" height="32" alt="Foto Profil Pengguna">
+                <label for="komentar">Tulis komentar Anda:</label><br>
+                <textarea id="komentar" rows="3" placeholder="Add to the discussion"></textarea>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
